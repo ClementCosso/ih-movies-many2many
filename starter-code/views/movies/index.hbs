@@ -1,0 +1,9 @@
+<h2>Movies list</h2>
+<a href="/movies/new">New celbrity</a>
+<ul>
+  {{# each movies}}
+  <li>{{title}} -- <a href="/movies/{{_id}}">profile</a>
+    -- <a href="/movies/{{_id}}/edit">edit</a>
+    -- <a href="/movies/{{_id}}/delete">remove</a></li>
+  {{/ each}}
+</ul>
